@@ -28,8 +28,7 @@ The application emphasizes dynamic UI state management and data integrity, offer
 
 1. **Clone the repository:**
    ```bash
-git clone https://github.com/ImpanaCK/Memoria.git
-cd Memoria
+   git clone https://github.com/ImpanaCK/Memoria.git
 
 2. **Install dependencies:**
    ```bash
