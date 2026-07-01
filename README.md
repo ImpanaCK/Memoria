@@ -1,16 +1,47 @@
-# React + Vite
+# Memoria – A Cloud-Integrated Personal Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Memoria is a full-stack, single-page application (SPA) designed for seamless photo and album management. Developed using **React.js** and **Vite**, the platform leverages **Supabase** as a Backend-as-a-Service (BaaS) to handle relational data, secure user authentication, and high-performance cloud storage.
 
-Currently, two official plugins are available:
+The application emphasizes dynamic UI state management and data integrity, offering a secure environment utilizing Supabase Row-Level Security (RLS) policies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Technical Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Dynamic Album Management:** Full CRUD functionality for personalized photo albums with automated cascading deletes linked to cloud media.
+* **Intelligent Cloud Storage:** Direct integration with Supabase Storage buckets for high-resolution image uploads and batch file removal.
+* **Row-Level Security (RLS):** Implementation of granular database policies ensuring users can exclusively access and modify their own assets.
+* **Batch Operations:** Optimized multi-select logic allowing for efficient bulk deletion of images and albums.
+* **Responsive Architecture:** Built with **Tailwind CSS** featuring interactive lightbox modals and a custom cover-image selection engine.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js (Vite), Tailwind CSS
+* **Backend-as-a-Service:** Supabase (PostgreSQL database, Authentication, Cloud Storage)
+* **Deployment & CI/CD:** Vercel
+
+---
+
+## ⚙️ Local Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+git clone https://github.com/ImpanaCK/Memoria.git
+cd Memoria
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your Supabase credentials:
+   ```text
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   
+4. **Run the development server:**
+   ```bash
+   npm run dev
+
